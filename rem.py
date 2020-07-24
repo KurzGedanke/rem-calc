@@ -1,14 +1,24 @@
 class Calc:
-    def __init__(self):
-        self.baseSize = input("Enter font base size: \n")
+    def __init__(self, base_size):
+        self.base_size = base_size
 
     def calc_loop(self):
-        calcSize = ""
-        while(calcSize != "No"):
-            calcSize = input("Enter pixel: \n")
-            print(self.calculate(calcSize))
+        rem_target = ""
+        while(rem_target != 'n'):
+            rem_target = self.get_px()
+            self.print_calc(self.calculate(rem_target))
 
     def calculate(self, px):
-        rem = (float(px) / float(self.baseSize))
+        rem = (float(px) / float(self.base_size))
 
-        return "Rem: \n\n" + str(rem) + "rem\n"
+        return rem
+
+    @staticmethod
+    def print_calc(rem):
+        print(f'{rem}rem')
+
+    @staticmethod
+    def get_px():
+        px = input('Enter target pixel:\n')
+
+        return px
