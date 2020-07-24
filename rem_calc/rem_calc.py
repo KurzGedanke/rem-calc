@@ -1,5 +1,5 @@
 import click
-from rem import Calc
+from rem_calc.rem import Calc
 
 
 @click.group()
@@ -20,7 +20,6 @@ def interactive(base):
 def calculate(base, target):
     calc = Calc(base)
     calc.print_calc(calc.calculate(target))
-
 
 
 main.add_command(interactive)
