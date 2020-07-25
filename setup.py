@@ -16,11 +16,12 @@ setup(
     description="rem-calc helps you to calculate rem values based on pixel values.",
     url='https://github.com/KurzGedanke/rem-calc',
     download_url='https://github.com/KurzGedanke/rem-calc/archive/v1.0.0.tar.gz',
+    long_description_content_type='text/markdown',
     long_description=read('README.md'),
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        'Click',
+        'click',
     ],
     entry_points={
         'console_scripts': [
@@ -28,7 +29,7 @@ setup(
         ]
     },
     classifiers=[
-        'Development Status :: 5 - Stable',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',

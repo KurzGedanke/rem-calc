@@ -1,6 +1,8 @@
 # rem-calc
 
 ![GitHub](https://img.shields.io/github/license/KurzGedanke/rem-calc)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rem-calc)
+![PyPI](https://img.shields.io/pypi/v/rem-calc)
 
 rem-calc helps you to calculate rem values based on pixel values. It has an *interactive* and *calculate* mode. 
 The `interactive` mode is useful if you need to convert a lot of values, the `calcualte` mode should be used for single 
