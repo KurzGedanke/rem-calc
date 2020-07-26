@@ -10,8 +10,6 @@ values.
 
 ## Install
 
-**COMING SOON**
-
 ```bash
 pip install rem-calc
 ```
@@ -31,11 +29,18 @@ Commands:
   calculate
   interactive
 ```
-### Single Value Calculation
+### Single Rem Calculation
 
 ```bash
 $ rem-calc calculate --base 16 --target 20
 1.25rem
+```
+
+### Single Pixel Calculation
+
+```bash
+$ rem-calc inverse --base 16 --rem 2.75
+44px
 ```
 
 ### Interactive Value Calculation 

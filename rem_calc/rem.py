@@ -4,7 +4,7 @@ class Calc:
 
     def calc_loop(self):
         rem_target = ""
-        while(rem_target != 'n'):
+        while rem_target != 'n':
             rem_target = self.get_px()
             self.print_calc(self.calculate(rem_target))
 
@@ -13,9 +13,17 @@ class Calc:
 
         return rem
 
+    def calculate_inverse(self, rem):
+        rem = int((float(rem) * float(self.base_size)))
+
+        return rem
+
     @staticmethod
-    def print_calc(rem):
-        print(f'{rem}rem')
+    def print_calc(value, method):
+        if method == 'rem':
+            print(f'{value}rem')
+        elif method == 'px':
+            print(f'{value}px')
 
     @staticmethod
     def get_px():

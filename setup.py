@@ -8,14 +8,14 @@ def read(fname):
 
 setup(
     name='rem-calc',
-    version='1.0',
+    version='1.1.0',
     author='KurzGedanke',
     author_email="rem_calc@kurzgedanke.me",
     license='MIT',
     keywords='rem css webdev',
     description="rem-calc helps you to calculate rem values based on pixel values.",
     url='https://github.com/KurzGedanke/rem-calc',
-    download_url='https://github.com/KurzGedanke/rem-calc/archive/v1.0.0.tar.gz',
+    download_url='https://github.com/KurzGedanke/rem-calc/archive/v1.1.0.tar.gz',
     long_description_content_type='text/markdown',
     long_description=read('README.md'),
     packages=find_packages(),
